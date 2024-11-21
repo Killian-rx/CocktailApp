@@ -1,0 +1,183 @@
+body{
+    background: #F2EBC4;
+    margin:0
+}
+
+input{
+  justify-self: center;
+  align-self: center;
+  font-size: 2vh;
+  width: 75vw;
+  margin: auto;
+  display: block;
+  border-radius: 28px;
+  height: 6vh;
+  border: none;
+  background: #CEC48C;
+  opacity: 0.6;
+  backdrop-filter: blur(10px);
+}
+
+input::placeholder{
+  color: #FFFFFF;
+  font-family: 'Teachers';
+}
+
+input:focus{
+  background: linear-gradient(-90deg, #70B432, #038C5A);
+  opacity: 1;
+  outline: none;
+}
+
+.search{
+  font-size: 'Teachers';
+  color: #FFFFFF;
+  font-size: 2vh;
+  padding-left: 5vw;
+}
+
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75vw;
+  height: 5vh;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+#searchbutton {
+  position: absolute;
+  display: flex; /* Pour centrer le contenu à l'intérieur */
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  height: 5.8vh; /* Hauteur du bouton */
+  width: 5.8vh; /* Largeur égale à la hauteur pour un cercle parfait */
+  margin-left: 61vw;
+  margin-top: 1.2vh;
+  padding: 0; /* Supprimer le padding, car la largeur/hauteur définissent déjà la taille */
+  background: linear-gradient(-90deg, #70B432, #038C5A);
+  border-radius: 50%; /* Rend le bouton rond */
+  color: #FFFFFF;
+  border: none;
+  transform: scale(0.8); /* Réduit la taille globale */
+  cursor: pointer; /* Change le curseur au survol */
+  transition: transform 0.3s ease; /* Animation pour rendre le clic ou le survol plus fluide */
+}
+
+.bx-search {
+  font-size: 3vh;
+}
+
+
+/* Conteneur qui contrôle le positionnement */
+.svg-container {
+    position: fixed; /* Important pour contrôler la position */
+    width: 100%; /* Adapte le conteneur à la largeur de l'écran */
+    height: 50vh; /* Ajuste la hauteur proportionnellement à la hauteur de l'écran */
+    display: flex; /* Optionnel, pour centrer le contenu */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Cache les débordements */
+    z-index: -1; /* Place le conteneur en arrière-plan */
+  }
+  
+  /* SVG responsive */
+  .responsive-svg {
+    width: 100%; /* Adapte la largeur au conteneur */
+    height: auto; /* Maintient les proportions */
+    max-width: 500px; /* Optionnel, limite la largeur maximale */
+  }
+
+
+
+/* forme du bas */
+.svg-container2 {
+    position: fixed; /* Fixe la position par rapport à la fenêtre */
+    bottom: 0; /* Colle au bas de la page */
+    left: 0; /* Aligne au bord gauche */
+    width: 100%; /* Étire sur toute la largeur */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    overflow: hidden; /* Cache tout débordement si nécessaire */
+    z-index: -1; /* Place en arrière-plan (facultatif) */
+  }
+  
+  /* SVG responsive */
+  .responsive-svg2 {
+    width: 100%; /* Adapte la largeur au conteneur */
+    height: auto; /* Maintient les proportions */
+  }
+
+
+/* citron haut */
+.citrontop{
+    position: fixed;
+    top: -6.5%;
+    right: -11%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* Animation de gigotement citron */
+.giggle-image {
+    width: 150px; /* Taille de l'image (modifiable selon besoin) */
+    animation: giggle 0.2s infinite; /* Applique l'animation */
+  }
+  
+  /* Définition de l'animation */
+  @keyframes giggle {
+    0%, 100% {
+      transform: rotate(0deg); /* Position initiale */
+    }
+    25% {
+      transform: rotate(-1deg); /* Rotation vers la gauche */
+    }
+    75% {
+      transform: rotate(1deg); /* Rotation vers la droite */
+    }
+  }
+
+
+/* bouton du millieu */
+.buttonmid{
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 29px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.circle-button {
+    width: 68px; /* Taille du cercle */
+    height: 68px; /* Taille du cercle */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    display: flex; /* Centre le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    background: #CEC48C;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour effet 3D */
+    cursor: pointer; /* Change le curseur en "main" */
+    transition: transform 0.2s ease; /* Animation au clic ou survol */
+}
+  
+  /* Animation de zoom au survol */
+  .circle-button:hover {
+    transform: scale(1.1); /* Agrandit légèrement le bouton */
+  }
+
+#Add{
+    width: 52px; /* Taille de l'icône */
+    height: 52px; /* Taille de l'icône */
+    margin-top: 2%;
+}

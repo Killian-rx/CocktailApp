@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des ingrédients</title>
+    <link rel="stylesheet" href="css/page3.css">
+</head>
+<body>
+    
+    <button onclick="window.location.href='index.html'">Retour à la liste</button> <!-- Retour à la page précédente -->
+    <h1>chercher par ingredient</h1>
+
+    <!-- Barre de recherche -->
+    <div>
+        <input type="text" id="search-input" placeholder="Nom de l'ingrédient" oninput="searchIngredient()">
+    </div>
+    
+    <div class="main">
+        <div class="ingredient_list"></div>
+        
+        <br>
+        <div class="ingredient-select">
+            <h1>Ingrédient sélectionné</h1>
+            <div id="ingredient-selected"></div>
+        </div>
+        <br>
+        <div class="cocktail">
+            <h1>cocktail</h1>
+            <div id="cocktail-list"></div>
+        </div>
+    </div>
+
+    
+    <script src="js/page3.js"></script>
+</body>
+</html> 

@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.cocktail {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Ajout d'un curseur pour indiquer que la div est cliquable */
+}
